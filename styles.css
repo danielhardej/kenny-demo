@@ -1,0 +1,225 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+.site-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.site-tagline {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.95;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Custom Embed Section */
+.custom-embed-section {
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+}
+
+.embed-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.custom-content-area {
+    background: white;
+    border: 2px dashed #667eea;
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 300px;
+    margin-top: 1rem;
+}
+
+.placeholder-content {
+    color: #555;
+}
+
+.placeholder-content h3 {
+    color: #764ba2;
+    margin-bottom: 1rem;
+}
+
+.placeholder-content ul {
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.placeholder-content li {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Usage Guide Section */
+.usage-guide {
+    background: #f8f9fa;
+}
+
+.code-example {
+    margin: 1.5rem 0;
+}
+
+.code-example h3 {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.code-example pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.code-example code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.site-footer p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .site-tagline {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 2rem 1rem;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+}
