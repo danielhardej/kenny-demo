@@ -19,7 +19,7 @@
     <main class="main-content">
         <section class="intro-section">
             <h2>About This Site</h2>
-            <p>This is a demonstration of a GitHub Pages site with custom content sections.</p>
+            <p>This is a demo of how to insert custom content sections on a website, hosted on GitHub Pages.</p>
         </section>
 
         <!-- Custom HTML/CSS Embed Section -->
@@ -49,15 +49,31 @@
             <h2>How to Use the Custom Section</h2>
             <div class="code-example">
                 <h3>Method 1: Direct HTML Injection</h3>
-                <pre><code>&lt;div class="custom-content-area"&gt;
-    &lt;!-- Your custom HTML here --&gt;
-&lt;/div&gt;</code></pre>
+                <p>Inject custom HTML directly into the content area. Best for static content such as text and images.</p>
+                <pre><code>
+                &lt;div class="custom-content-area"&gt;
+                &lt;!-- Your custom HTML here --&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+
+            <div class="code-example">
+                <h3>Method 2: Direct HTML Injection with iframe</h3>
+                <p>Embed an iframe directly within the custom content area. Best for displaying external content.</p>
+                <pre><code>
+                &lt;div class="custom-content-area"&gt;
+                &lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;
+                &lt;/div&gt;
+                </code></pre>
             </div>
             
             <div class="code-example">
-                <h3>Method 2: JavaScript Loading</h3>
-                <pre><code>document.getElementById('customContentArea').innerHTML = 
-    '&lt;div&gt;Your custom HTML here&lt;/div&gt;';</code></pre>
+                <h3>Method 3: JavaScript Loading</h3>
+                <p>Use JavaScript to dynamically load content into the custom content area. Best for interactive or frequently changing content.</p>
+                <pre><code>
+                document.getElementById('customContentArea').innerHTML = 
+                '&lt;div&gt;Your custom HTML here&lt;/div&gt;';
+                </code></pre>
             </div>
         </section>
     </main>
